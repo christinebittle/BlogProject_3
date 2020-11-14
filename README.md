@@ -1,7 +1,7 @@
 # BlogProject_3
 This is the third iteration of the blog project, including search functionality!
 
-[Video which goes over codebase](https://youtu.be/uP2kH8tFXIQ)
+[Video which goes over codebase](https://youtu.be/sOwP2C08WZE)
 
 ## How to Install:
 - Step 1 : Download [MAMP](https://www.mamp.info/en/downloads/) or similar MySQL environment
