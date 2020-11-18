@@ -20,7 +20,7 @@ namespace BlogProject.Controllers
         /// </summary>
         /// <example>GET api/AuthorData/ListAuthors</example>
         /// <returns>
-        /// A list of authors (first names and last names)
+        /// A list of author objects.
         /// </returns>
         [HttpGet]
         [Route("api/AuthorData/ListAuthors/{SearchKey?}")]
@@ -74,7 +74,11 @@ namespace BlogProject.Controllers
         }
 
 
-
+        /// <summary>
+        /// Returns an individual author from the database by specifying the primary key authorid
+        /// </summary>
+        /// <param name="id">the author's ID in the database</param>
+        /// <returns>An author object</returns>
         [HttpGet]
         public Author FindAuthor(int id)
         {
