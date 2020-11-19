@@ -26,11 +26,14 @@ namespace BlogProject.Models
         {
             get
             {
+                // Convert Zero Datetime is a setting that will interpret a 0000-00-00 as null
+                // This makes it easier for C# to convert to a proper DateTime type
                 return "server = " + Server
                     + "; user = " + User
                     + "; database = " + Database
                     + "; port = " + Port
-                    + "; password = " + Password;
+                    + "; password = " + Password
+                    + "; convert zero datetime = True";
             }
         }
         //This is the method we actually use to get the database!
